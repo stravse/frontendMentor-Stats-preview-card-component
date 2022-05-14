@@ -10,7 +10,7 @@ $image-size: 320px;
 $image-size-height: 250px; 
 $layer-color: #651796a2;
 :root{
-    font-size: 15px;
+    font-size: 14px;
 }
 *, *::before, *::after{
     box-sizing: border-box;
@@ -147,18 +147,36 @@ body{
                 padding: 0 40px 0 10px;
             }
             h1{
-                font-size: 25px;
+                font-size: 32px;
             }
             .main-paragraph{
                 margin-top: 20px;
-                padding: 0 0 0 10px;
+                padding: 0 20px 0 10px;
             }
             .stat-container{
                 flex-direction: row;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 width: 100%;
+                padding: 0 50px 0 10px;
             }
         }
     }
     
+}
+
+@media (min-width: 1000px) {
+    .card{
+        width: 850px;
+        .card-image-container{
+            width: 400px;
+            height: 350px;
+            .card-image{
+                width: 400px;
+                height: 350px;
+            }
+        }
+        .card-text{
+            padding: 0 30px;
+        }
+    }
 }

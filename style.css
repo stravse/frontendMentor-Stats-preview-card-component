@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 :root {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 *, *::before, *::after {
@@ -208,21 +208,39 @@ body {
     padding: 0 40px 0 10px;
   }
   .card .card-text h1 {
-    font-size: 25px;
+    font-size: 32px;
   }
   .card .card-text .main-paragraph {
     margin-top: 20px;
-    padding: 0 0 0 10px;
+    padding: 0 20px 0 10px;
   }
   .card .card-text .stat-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
+    padding: 0 50px 0 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card {
+    width: 850px;
+  }
+  .card .card-image-container {
+    width: 400px;
+    height: 350px;
+  }
+  .card .card-image-container .card-image {
+    width: 400px;
+    height: 350px;
+  }
+  .card .card-text {
+    padding: 0 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
